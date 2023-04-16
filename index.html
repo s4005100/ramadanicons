@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Ramadan icons
+        </title>
+
+        <!-- HTML5 buzz link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+     
+        <style> 
+            body { 
+               background-image: url('img/background1.png');
+               background-repeat: no-repeat;
+               background-size: cover;
+                }
+               </style>
+            
+        <style>
+
+            .row{
+                width:720px;
+                margin: 20px auto 20px auto ;
+                position: relative;
+                
+            }
+        
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:45px;
+                
+            }
+        </style>
+    
+     </head>  
+
+
+
+
+
+
+    
+
+    <!-- first row icons -->
+    
+<div class="row">
+    <div class="image-container"><img id="mosque" src="img/mosque.png" onmouseover="this.src='img/mosque2.png';" onmouseout="this.src='img/mosque.png';" width="190"/></div>
+    <div class="image-container"> <img id="moon" src="img/moon.png" onmouseover="this.src='img/moon2.png';" onmouseout="this.src='img/moon.png';" width="150"/></div>
+    <div class="image-container"> <img id="iftar" src="img/iftar.png" onmouseover="this.src='img/iftar2.png';" onmouseout="this.src='img/iftar.png';" width="250"/></div>
+</div>
+
+<!-- second row icons --> 
+<div class="row">
+    <div class="image-container"> <img id="noeat" src="img/noeat.png" onmouseover="this.src='img/noeat2.png';" onmouseout="this.src='img/noeat.png';" height="190" width="190"/></div>
+    <div class="image-container"> <img id="quran" src="img/quran.png" onmouseover="this.src='img/quran2.png';" onmouseout="this.src='img/quran.png';" height="200" width="200"/></div>
+    <div class="image-container"> <img id="charity" src="img/charity.png" onmouseover="this.src='img/charity2.png';" onmouseout="this.src='img/charity.png';" width="200"/></div>
+</div>
+
+<!-- third row icons -->
+<div class="row">
+    <div class="image-container"> <img id="lantern" src="img/lantern.png" onmouseover="this.src='img/lantern2.png';" onmouseout="this.src='img/lantern.png';" width="180"/></div>
+    <div class="image-container"> <img id="drum" src="img/drum.png" onmouseover="this.src='img/drum2.png';" onmouseout="this.src='img/drum.png';" width="250"/></div>
+      <div class="image-container"> <img id="mat" src="img/mat.png" onmouseover="this.src='img/mat2.png';" onmouseout="this.src='img/mat.png';" width="120"/></div>
+</div>
+        
+    
+
+    <!-- sounds -->
+        <script>
+
+            var sound1 = new buzz.sound("sound/mosque.mp3");
+            var sound2 = new buzz.sound("sound/moon.mp3");
+            var sound3 = new buzz.sound("sound/iftar.mp3");
+
+            var sound4 = new buzz.sound("sound/noeat.mp3");
+            var sound5 = new buzz.sound("sound/flip page.mp3");
+            var sound6 = new buzz.sound("sound/charity.mp3");
+
+            var sound7 = new buzz.sound("sound/match.mp3");
+            var sound8 = new buzz.sound("sound/drums.mp3");
+            var sound9 = new buzz.sound("sound/mat.mp3");
+
+            window.onload = function(){
+                document.getElementById('mosque').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('moon').addEventListener('mouseover', function () {sound2.play();});
+                document.getElementById('iftar').addEventListener('mouseover', function () {sound3.play();});
+
+                document.getElementById('noeat').addEventListener('mouseover', function () {sound4.play();});
+                document.getElementById('quran').addEventListener('mouseover', function () {sound5.play();});
+                document.getElementById('charity').addEventListener('mouseover', function () {sound6.play();});
+
+                document.getElementById('lantern').addEventListener('mouseover', function () {sound7.play();});
+                document.getElementById('drum').addEventListener('mouseover', function () {sound8.play();});
+                document.getElementById('mat').addEventListener('mouseover', function () {sound9.play();});
+        
+            };
+            
+        </script>
+
+
+    
+    
+    </body>
+
+ </html>
